@@ -34,8 +34,9 @@ This project helped me strengthen:
 - Event listeners for both click and keyboard
 - Clean and responsive UI design
 - JavaScript time formatting logic
+---
 
-- MIT License
+ MIT License
 
 Copyright (c) 2025 Abhishek Sharma
 
