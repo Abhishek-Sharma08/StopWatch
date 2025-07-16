@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main {
+    text-align: center;
+    background: #212121;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffffff1a;
+    width: 100%;
+    max-width: 500px;
+}
+
+.display-time {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    min-width: 100px;
+    flex: 1 1 auto;
+    max-width: 150px;
+}
+
+#start {
+    background-color: #7e4bfd;
+    color: white;
+}
+
+#stop {
+    background-color: #ef2a1c;
+    color: white;
+}
+
+#reset {
+    background-color: #2f3132;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+    .main {
+        padding: 30px 20px;
+    }
+
+    .display-time {
+        font-size: 2.5rem;
+    }
+
+    button {
+        flex: 1 1 100%;
+        max-width: none;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
